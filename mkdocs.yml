@@ -1,3 +1,10 @@
 site_name: Matthew McMillan's Knowledge Base
 theme:
+
+  palette:
+    primary: 'blue'
+    accent: 'orange'
   name: 'material'
+  color: 'orange'
+  logo:
+    icon: 'queue'
