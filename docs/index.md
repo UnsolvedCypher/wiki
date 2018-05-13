@@ -1,17 +1,5 @@
-# Welcome to MkDocs
+# Welcome to the Knowledge Base
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+This knowledge base contains knowledge I want to easily refer to in the future. It contains information about software development, language learning, mathematics, electrical engineering, and cubing. If you want to add or correct any page, please open a pull request in [this site's repository](https://github.com/unsolvedcypher/wiki).
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This website is built using [MkDocs](https://www.mkdocs.com/), with the [MkDocs material](https://squidfunk.github.io/mkdocs-material/) theme. It's hosted on [Netlify](https://www.netlify.com/).
