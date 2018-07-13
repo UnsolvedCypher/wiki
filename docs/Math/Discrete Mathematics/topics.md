@@ -1,0 +1,19 @@
+- What is discrete vs continuous
+- Multiplicative principle
+- Well-defined set
+- set notation (also for infinite sets), brackets vs elipse
+- subset encoding with bit vectors
+- natural numbers, integers, rational numbers, real numbers
+- union, intersection, complement, cartesian product, not
+- double inclusion method
+- power set
+- empty set
+- set magnitude
+- venn diagram set representations
+- lexographic order
+- writing out set from expression
+- inclusion/exclusion principle
+- set cardinality
+- countable/uncountable sets
+- one-to-one functions
+- 
