@@ -2,8 +2,9 @@
 
 Once you know the general pattern, numbers are easy!
 
-| één           | one          |
+| Dutch         | English      |
 |---------------|--------------|
+| één           | one          |
 | twee          | two          |
 | drie          | three        |
 | vier          | four         |
