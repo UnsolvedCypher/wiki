@@ -20,7 +20,7 @@
 | oo    | o as in go     |
 | uu    | ooah sound     |
 
-# Dipthongs
+## Dipthongs
 
 | Sound  | Description                                                  |
 |--------|--------------------------------------------------------------|
@@ -30,4 +30,4 @@
 | oe     | like oo in boot                                              |
 | ui     | similar to ow in cow                                         |
 
-Good resource: https://www.heardutchhere.net/lesson1.html
+[Good resource with audio](https://www.heardutchhere.net/lesson1.html)
