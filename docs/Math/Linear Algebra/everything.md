@@ -44,7 +44,17 @@ A if there is a group of vectors $G$ and vector $W$ is in the span of this group
 
 The rank of a matrix is the number of linearly independent rows in the matrix, or linearly independent columns (this is the same thing). To see how many independent rows a matrix contains, simply put it into RREF and the number of non-zero columns is the number of linearly independent matrices.
 
+## Matrix addition and subtraction
+
+This can only be done if matrices are the exact same size. If they are, you can just do the operation with each cell from the first matrix and the corresponding one from the second.
+
 ## Matrix multiplication
+
+### By a constant
+
+Just multiply every element by a constant!
+
+### By a matrix
 
 To be able to multiply, the number of columns in the first matrix must equal to the number of rows in the second. The resulting matrix will have as many rows as the first matrix, and as many columns as the second.
 
@@ -55,7 +65,7 @@ Every column in the second matrix should be turned sideways and each element sho
 Given matrix $A$ and vector $x$, $Ax$ is the linear combination, where each row of $x$ is multiplied by the corresponding column of $A$ and the resulting vectors are added together. 
 
 
-### Homogenous equations
+### Homogenous equation
 
 $Ax=0$ is the homogenous equation. It always has a trivial solution, which is $x=0$.
 
@@ -71,55 +81,97 @@ Make a matrix with one row for each element and one column for each element grou
 
 A $m * n$ matrix can define a transformation from $RR^n$ to $RR^m$. To perform the transformation, multiply the vector by the matrix and you have a resulting vector. This is called the image.
 
+
 ### Properties
 
-Linear transformations 
+- Linear the image scales with the initial vector
+- Transformations of the sum of two vectors are the same as the sum of the transformations of the vectors alone
+- transformations can be one-to-one if they are from $R^n$ to $R^m$ where $m >= n$. They can be onto if $m <= n$.
+
+### Transposes
+
+A matrix $A$ can be written as $A^T$ or $A'$ to flip it over its diagonal (so columns are now rows, and rows are now columns).
+
+## Determinants
+
+Determinants are defined only for square matrices. For a 2x2 matrix, the determinant for $[[a, b], [c, d]]$ is $ad -bc$. 
+
+For bigger matrices, just make everything below (or above)the diagonal zero and multiply the diagonals together
 
 
+### Properties
+
+- multiplying a row or column by a constant multiplies the determinant by that constant
+- if any two rows or columns are equal then the determinant is zero
+- adding rows to each other, even when rows are multiplied by a constant before adding
+- switching two rows or columns changes the sign
+- $A^T$ has the same determinant as $A$
+- the inverse matrix has a determinant that's the inverse of the original one
+- the matrix raised to any power has its determinant raised to the same power
+- the determinant of two multiplied matrices is equal to the product of the determinants
 
 
+## Inverse matrix
+
+**an identity matrix is a matrix with all ones on the left-to-right downwards diagonal and zeroes elsewhere**
+
+To find the inverse matrix $A^-1$, just augment $A$ with the identity matrix of the same size and get the identity matrix on the other side of the augmentation line. An inverse matrix doesn't always exist.
+
+## $PP$ subspaces
+
+In order to be in a $PP^n$ subspace with an appropriate n, a polynomial function must
+- contain the zero vector
+- be able to represent any sum of its outputs as an output
+- be able to represent a scalar multiplication of an output as an output
+
+## Basis
+
+The basis is a minimal set of vectors that will span a subspace. To find the basis of a row space, simply reduce the matrix to REF and make vectors from the remaining rows. If you need to find the basis of the column space of a matrix, simply flip the matrix and perform the above procedure.
+
+**the dimension of a subspace is the number of vectors needed to form the basis**
 
 
+### Coordinates
+
+A vector in the span of a basis is said to another vector which is made up of the coordinates of the first vector in the basis. This coordinate vector is made up of the coefficients needed to multiply each vector in the basis by in order to get the vector that's in the span. To find the coordinates, simply put the basis together to make a matrix and then augment it with the vector you want to find coordinates of, and put into RREF. The values in the augmented part of the vector are the coordinates.
+
+## Rank and Null Space
+
+The rank of a matrix is the number of linearly independent columns. The nullity, or the dimension of the null space, is the number of columns minus the rank. To find the null space, just find vector x where $Ax = 0$.
+
+## Eigenvectors and eigenvalues
+
+To find the eigenvalues, the equation $det(A - \lambda I) = 0$ is used, where $I$ is the identity matrix (all 1s diagonally). The resulting equation may need to be solved quadratically or otherwise.
+
+To find eigenvectors, simply solve for $(A - \lambda I)v = 0$.
+
+## $W^⊥$
+
+To calculate the perp (orthogonal complement) of a vector, just calculate the null space of its transform.
 
 
+## Orthogonal projection
+
+The orthogonal projection of $\vec u$ onto $\vec b$ is $\frac{(\vec u \circ \vec b)}{|| \vec b ||^2} * b$
+
+**Othogonal means dot product is equal to zero**
+
+## Gram Schmidt Process
+
+basis {$x_1, x_2, ... x_p$}
+{$v_1, v_2, ..., v_n$}
+
+$v_1 = x_1$
+
+$v_2 = x_2 - \frac{x_2 \circ v_1}{v_1 \circ v_1} v_1$
+
+$v_3 = x_3  - \frac{x_2 \circ v_1}{v_1 \circ v_1} v_1 - \frac{x_2 \circ v_1}{v_1 \circ v_1} v_1$
 
 
+## Least Squares Problem
 
+$(A^T A)x = A^T b$
 
+## Angle between two vectors
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Misc
-
-Column space: the vectors that make up the columns of the vector
-
-Row space: the vectors that make up the rows of a vector
-
-Issues: 2.9
+$\cos{\theta} = \frac{\vec u \cdot \vec v}{||\vec u|| \cdot ||\vec v||}$
