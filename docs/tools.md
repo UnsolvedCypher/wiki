@@ -8,11 +8,12 @@ _This list is very much a work in progress..._
 - zsh with oh-my-zsh: a better shell than bash ([list of features here](https://code.joejag.com/2014/why-zsh.html))
 - Dvorak: a superior keyboard layout to QWERTY that optimizes the location of every letter for speed and comfort
 - AutoKey: a text expander for Linux that lets you type abbreviations to expand to words
-  - I start all of my abbreviations with a semicolon so they aren't confused with other words
-  - This is very useful for emails and job applications. I have a ";addr" abbreviation that expands to my address, and a ";lin" that expands to my LinkedIn URL, etc
+    - I start all of my abbreviations with a semicolon so they aren't confused with other words
+    - This is very useful for emails and job applications. I have a ";addr" abbreviation that expands to my address, and a ";lin" that expands to my LinkedIn URL, etc
 - trizen: a simple AUR package manager (only relevant for Arch Linux users)
 - LastPass: keeps track of your passwords easily for free
-  - This syncs over the internet. If that bothers you and you prefer a FOSS solution, try KeePass. However, you'll need to sync between your devices yourself
+    - This syncs over the internet. If that bothers you and you prefer a FOSS solution, try KeePass. However, you'll need to sync between your devices yourself
+- GRUB2: now known just as GRUB, it is the best bootloader
 
 ## Software Development
 - JetBrains IDEs: very good IDEs for a variety of languages (particularly useful for languages with lots of libraries like Java, C#, etc)
